@@ -332,69 +332,6 @@ The API will return three error types when requests fail:
     "total_questions": 34
 }
 ```
-#### GET /categories
-- General:
-    - Returns a list of category objects, success value, and total number of categories
-    - Results are paginated in groups of 10. Include a request argument to choose page number, starting from 1. 
-- Sample: `curl http://127.0.0.1:5000/categories`
-
-```
-{
-  "categories": {
-    "1": "Science", 
-    "2": "Art", 
-    "3": "Geography", 
-    "4": "History", 
-    "5": "Entertainment", 
-    "6": "Sports"
-  }, 
-  "success": true, 
-  "total_categories": 6
-}
-```
-#### GET /categories
-- General:
-    - Returns a list of category objects, success value, and total number of categories
-    - Results are paginated in groups of 10. Include a request argument to choose page number, starting from 1. 
-- Sample: `curl http://127.0.0.1:5000/categories`
-
-```
-{
-  "categories": {
-    "1": "Science", 
-    "2": "Art", 
-    "3": "Geography", 
-    "4": "History", 
-    "5": "Entertainment", 
-    "6": "Sports"
-  }, 
-  "success": true, 
-  "total_categories": 6
-}
-```
-
-## Review Comment to the Students
-```
-This README is missing documentation of your endpoints. Below is an example for your endpoint to get all categories. Please use it as a reference for creating your documentation and resubmit your code. 
-
-Endpoints
-GET '/api/v1.0/categories'
-GET ...
-POST ...
-DELETE ...
-
-GET '/api/v1.0/categories'
-- Fetches a dictionary of categories in which the keys are the ids and the value is the corresponding string of the category
-- Request Arguments: None
-- Returns: An object with a single key, categories, that contains a object of id: category_string key:value pairs. 
-{'1' : "Science",
-'2' : "Art",
-'3' : "Geography",
-'4' : "History",
-'5' : "Entertainment",
-'6' : "Sports"}
-
-```
 
 
 ## Testing
